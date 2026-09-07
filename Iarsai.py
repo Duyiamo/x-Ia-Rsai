@@ -128,7 +128,7 @@ with tab1:
         " nhật (Polygon/Rectangle)** để khoanh trọn ranh giới khu đất."
     )
 
-    m = folium.Map(location=[14.3305, 108.6472], zoom_start=15)
+    m = folium.Map(location=[13.304687, 108.603443], zoom_start=15)
 
     folium.TileLayer(
         tiles="https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
@@ -273,12 +273,12 @@ with tab1:
           conn.close()
 
 with tab2:
-  st.header("Khu vực Quản trị dành cho Cán bộ địa chính")
+  st.header("Khu vực Quản trị dành cho Cán bộ địa chính xã Ia RSai")
 
   password = st.text_input(
       "Nhập mật khẩu quản lý để tiếp tục:", type="password"
   )
-  ADMIN_PASSWORD = "admin123"
+  ADMIN_PASSWORD = "phuc123"
 
   if password == ADMIN_PASSWORD:
     st.success("Xác thực thành công! Chào mừng cán bộ quản lý.")
